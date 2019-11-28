@@ -1,0 +1,28 @@
+
+	Nome: 		Matheus Roque Petrachin
+	Endereço: 	Rua Calendulas 
+	Sexo: 		Masculino 
+	code: 		3021
+	year: 		19
+
+
+	Nome: 		Rafael Reis
+	Endereço: 	Av Brasil 
+	Sexo: 		Masculino 
+	code: 		3022
+	year: 		30
+
+
+	Nome: 		Andrey da Luz
+	Endereço: 	Hugo Gegembauer 
+	Sexo: 		Masculino 
+	code: 		3024
+	year: 		19
+
+
+	Nome: 		Erlei Biazio
+	Endereço: 	Hugo Gegembauer 
+	Sexo: 		Masculino 
+	code: 		3024
+	year: 		35
+

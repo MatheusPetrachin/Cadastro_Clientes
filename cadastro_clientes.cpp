@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <locale.h>
+
+int main(){
+	
+	setlocale(LC_ALL, "Portuguese");
+		
+	FILE *arquivo;
+					
+	int code, year;
+	char name[45] = "";
+	char address[45] = "";
+	char sexo[10] = "";
+	char vet[300] = "";
+	
+	printf("\n\nCadastro de Clientes: \n\n");
+	
+	printf("Cliente, Informe seu nome: ");
+	gets(name);
+	
+	printf("Informe seu endereço: ");
+	gets(address);
+	
+	printf("Informe seu sexo: ");
+	gets(sexo);
+	
+	printf("Informe sua idade: ");
+	scanf("%i%*c", &year);
+	
+	printf("Informe seu código: ");
+	scanf("%i%*c", &code);
+	
+	arquivo = fopen("cadastro_cliente2.txt", "wt");  //wt - permissão de gravação***
+													//rt - Leitura
+													//a - Append (Não realiza alterações no arquivo
+										
+	if (arquivo == NULL){//Se houver algum erro, o ponteiro ira apontar para NULL
+		printf("Nao foi possível encontrar o arquivo...");
+		exit(0);
+	}else{
+	
+	fprintf(arquivo, "\n\tNome: \t\t%s\n\tEndereço: \t%s \n\tSexo: \t\t%s \n\tcode: \t\t%i\n\tyear: \t\t%i\n\n", name, address, sexo, code, year);
+	fclose(arquivo);
+	
+	}
+	
+	return 0;
+}
